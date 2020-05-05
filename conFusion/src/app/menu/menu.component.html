@@ -1,7 +1,7 @@
 <div class="container" fxLayout="column" fxLayoutGap="10px">
 	<div fxFlex>
 		<div>
-			<h3>Menu</h3>
+			<h2><b>Menu</b></h2>
 			<hr>
 		</div>
 	</div>
@@ -18,21 +18,8 @@
 	</div>
 
 	<div fxFlex *ngIf="selectedDish">
-		<mat-card>
-			<mat-card-header>
-				<mat-card-title>
-					<h3>{{selectedDish.name | uppercase}}</h3>
-				</mat-card-title>
-			</mat-card-header>
-			<img mat-card-image src={{selectedDish.image}} alt ={{selectedDish.name}}>
-			<mat-card-content>
-				<p>{{selectedDish.description}}</p>
-			</mat-card-content>
-			<mat-card-actions>
-				<button mat-button>LIKE</button>
-				<button mat-button>SHARE</button>
-			</mat-card-actions>
-		</mat-card>
+		<app-dish-detail>
+		</app-dish-detail>
 	</div>
 </div>
 
