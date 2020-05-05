@@ -24,13 +24,13 @@
 	</mat-card>
   </div>
 
-  <div fxFlex="40">
+  <div fxFlex="40" *ngIf="dish">
 	<div>
 		<div>
 			<h2><b>Comments</b></h2>
 		</div>
 	</div>
-  	<mat-list *ngIf="dish">
+  	<mat-list>
   		<mat-list-item *ngFor="let comment of dish.comments">
   			<h5 matLine>{{comment.comment}}</h5>
   			<p matLine>{{comment.rating}} Stars</p>
