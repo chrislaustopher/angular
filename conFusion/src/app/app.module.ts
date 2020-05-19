@@ -37,6 +37,9 @@ import { Leader } from './shared/leader';
 import { LeaderService } from './services/leader.service';
 import { LoginComponent } from './login/login.component';
 
+//testing
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
   	HomeComponent,
@@ -68,7 +71,8 @@ import { LoginComponent } from './login/login.component';
     ReactiveFormsModule,
     MatSelectModule,
     MatSlideToggleModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    HttpClientModule,
   ],
   providers: [
   	DishService,

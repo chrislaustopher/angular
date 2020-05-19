@@ -2,12 +2,15 @@ import { Injectable } from '@angular/core';
 import { Leader } from '../shared/leader';
 import { LEADERS } from '../shared/leaders';
 
+//testing
+import { HttpClient } from '@angular/common/http';
+
 @Injectable({
   providedIn: 'root'
 })
 export class LeaderService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   getLeaders(): Promise<Leader[]> {
   	return Promise.resolve(LEADERS);
