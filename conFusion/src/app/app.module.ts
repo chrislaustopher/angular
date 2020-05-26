@@ -19,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatSliderModule } from '@angular/material/slider';
 import { HttpClientModule } from '@angular/common/http';
 
 import 'hammerjs';
@@ -74,6 +75,7 @@ import { baseURL } from './shared/baseurl';
     MatSlideToggleModule,
     MatProgressSpinnerModule,
     HttpClientModule,
+    MatSliderModule
   ],
   providers: [
   	DishService,
